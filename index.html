@@ -281,7 +281,7 @@
       <button type="button" class="footer__button" onclick="window['insert-floppy'].showModal()" aria-controls="insert-floppy">
         <span class="button__text">
           <svg class="footer__button-image" viewBox="0 0 21 21">
-            <use href="./svg/floppy.svg#floppy">
+            <use href="./svg/floppy.svg#floppy"/>
           </svg>
           Сохранить на память
         </span>
@@ -291,12 +291,14 @@
       <form class="dialog__form">
         <label class="dialog__message">
           <svg viewBox="0 0 21 21" width="39" height="39">
-            <use href="./svg/floppy.svg#floppy">
+            <use href="./svg/floppy.svg#floppy"/>
           </svg>
           <span class="dialog__message-text">Вставьте дискету, чтобы продолжить</span>
         </label>
+      </form>
+      <form method="dialog">
         <button 
-          type="button"
+          type="submit"
           onclick="window['insert-floppy'].close()" class="dialog__button">ок
         </button>
       </form>
