@@ -16,7 +16,7 @@
 
 .page {
   font-family: var(--main-font, sans-serif);
-  font-variation-settings: 'wgt' var(--card-text-font-weight, 400);
+  font-variation-settings: 'wght' var(--card-text-font-weight, 400);
   color: var(--accent-color, #000);
   background-image:var(--background-image);
   background-size: cover;
@@ -389,9 +389,6 @@ button:focus-visible {
 }
 
 .dialog {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-row-gap: 1.875rem;
   padding: 1.875rem;
   background-color: var(--background-color);
   color: var(--accent-color);
@@ -407,6 +404,12 @@ button:focus-visible {
 
 .dialog::backdrop {
   background-color: rgba(var(--accent-color-rgb), .75);
+}
+
+.dialog__form {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row-gap: 1.875rem;
 }
 
 .dialog__message {
@@ -481,5 +484,5 @@ button:focus-visible {
 
   .dialog__message-text {
     max-inline-size: 12.375rem;
-  } 
+  }
 }
