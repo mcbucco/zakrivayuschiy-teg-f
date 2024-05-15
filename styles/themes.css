@@ -4,3 +4,50 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+  --card-title-font-weight: 785;
+  --card-text-font-weight: 465;
+  --background-color: #000;
+  --background-color-rgb: 0, 0, 0;
+  --accent-color: #00CC14;
+  --accent-color-rgb: 0, 204, 20;
+  --button-text-color: var(--accent-color);
+  --background-image:
+    repeating-linear-gradient(to right, #000, #000 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #000, #000 2px, transparent 2px 4px),
+    linear-gradient(#007f0c, #004306);
+    --contour-color: var(--accent-color, #00CC14);
+}
+
+:root.theme-light {
+  --card-title-font-weight: 700;
+  --card-text-font-weight: 400;
+  --background-color: #FFF;
+  --background-color-rgb: 255, 255, 255;
+  --accent-color: #000;
+  --accent-color-rgb: 0, 0, 0;
+  --button-text-color: var(--background-color);
+  --background-image:
+    repeating-linear-gradient(to right,#d3d3d3, #d3d3d3 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7, #1a1a1a);
+    --contour-color: var(--accent-color, #000);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card-title-font-weight: 785;
+    --card-text-font-weight: 465;
+    --background-color: #000;
+    --background-color-rgb: 0, 0, 0;
+    --accent-color: #00CC14;
+    --accent-color-rgb: 0, 204, 20;
+    --button-text-color: var(--accent-color);
+    --background-image:
+      repeating-linear-gradient(to right, #000, #000 2px, transparent 2px 4px),
+      repeating-linear-gradient(to bottom, #000, #000 2px, transparent 2px 4px),
+      linear-gradient(#007f0c, #004306);
+      --contour-color: var(--accent-color, #00CC14);
+  }
+}
