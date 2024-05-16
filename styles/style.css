@@ -70,11 +70,11 @@
 }
 
 .theme-menu__list {
-  padding-inline-start: .65rem;
   display: grid;
   grid-auto-flow: row;
   grid-row-gap: .75rem;
   justify-content: center;
+  padding-inline-start: 1.1rem;
 }
 
 .header__button,
