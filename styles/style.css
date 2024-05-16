@@ -414,9 +414,6 @@ button:focus-visible {
   padding: 1.875rem;
   color: var(--accent-color);
   background-color: var(--background-color);
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-row-gap: 1.875rem;
 }
 
 .dialog:not([open]) {
@@ -426,6 +423,12 @@ button:focus-visible {
 
 .dialog::backdrop {
   background-color: var(--backdrop-color);
+}
+
+.dialog__form {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row-gap: 1.875rem;
 }
 
 .dialog__message {
