@@ -15,8 +15,12 @@
     repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px 4px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --border: 2px solid var(--accent-color, #000);
-  --card-padding: 25px;
+  --card-padding: 1.5625rem;
   --text-shadow-color: rgba(var(--background-color-rgb), .5);
   --contour-color: var(--accent-color, #000);
   --sparks-color: #FF0000;
+
+  ::backdrop {
+    --backdrop-color: rgba(0, 0, 0, .75);
+  }
 }

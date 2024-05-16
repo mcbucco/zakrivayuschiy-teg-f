@@ -12,3 +12,35 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes back-and-forward {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes heart-click {
+  from {
+    transform: scale(1);
+    transform-origin: center;
+  }
+
+  to {
+    transform: scale(1.5);
+    transform-origin: center;
+  }
+}
+
+@keyframes sparks-burst {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
