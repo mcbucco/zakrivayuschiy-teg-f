@@ -18,9 +18,6 @@
     repeating-linear-gradient(to bottom, #000, #000 2px, transparent 2px 4px),
     linear-gradient(#007f0c, #004306);
     --contour-color: var(--accent-color, #00CC14);
-    ::backdrop {
-      --backdrop-color: rgba(0, 204, 20, .75);
-    }
 }
 
 :root.theme-light {
@@ -36,9 +33,6 @@
     repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px 4px),
     linear-gradient(#e7e7e7, #1a1a1a);
     --contour-color: var(--accent-color, #000);
-    ::backdrop {
-      --backdrop-color: rgba(0, 0, 0, .75);
-    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -55,8 +49,5 @@
       repeating-linear-gradient(to bottom, #000, #000 2px, transparent 2px 4px),
       linear-gradient(#007f0c, #004306);
       --contour-color: var(--accent-color, #00CC14);
-      ::backdrop {
-        --backdrop-color: rgba(0, 204, 20, .75);
-      }
   }
 }

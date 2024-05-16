@@ -14,7 +14,12 @@
 
 */
 
+/* * {
+  border: 1px dotted red;
+} */
+
 .page {
+  padding-block-start: 6.25rem;
   color: var(--accent-color, #000);
   font-family: var(--main-font, Inter-Variable), Inter, sans-serif;
   background-image:var(--background-image);
@@ -22,14 +27,14 @@
   background-attachment: fixed;
   font-variation-settings: 'wght' var(--card-text-font-weight, 400);
   max-inline-size: 1440px;
-  min-inline-size: 320px;
+  min-inline-size: 375px;
   min-block-size: 100dvb;
 }
 
 .header,
 .main {
-  margin: 6.25rem auto 3.125rem;
-  inline-size: clamp(375px, 48.6%, 700px);
+  margin: 0 auto;
+  inline-size: clamp(375px, 48.61%, 700px);
 }
 
 .header,
@@ -62,12 +67,10 @@
 
 .header__theme-menu {
   padding-block-start: 1.56rem;
-  /* padding-inline-start: clamp(8.4rem, 42%, 18.4375rem); */
 }
 
 .theme-menu__list {
-  position: relative;
-  left: .65rem;
+  padding-inline-start: .65rem;
   display: grid;
   grid-auto-flow: row;
   grid-row-gap: .75rem;
@@ -119,8 +122,15 @@
   transition: color ease 0.3s;
 }
 
-button:focus,
-button:focus-visible {
+
+.header__button:focus,
+.header__button:focus-visible,
+.main__button:focus,
+.main__button:focus-visible,
+.footer__button:focus,
+.footer__button:focus-visible
+.dialog__button:focus,
+.dialog__button:focus-visible {
   outline: none;
 }
 
@@ -143,6 +153,10 @@ button:focus-visible {
 .theme-menu__button:focus-visible::after {
   transition: transform ease 0.3s;
   transform: scaleX(1);
+}
+
+.main {
+  margin-block-start: 6.25rem;
 }
 
 .main__card:not(:first-child) {
@@ -392,7 +406,7 @@ button:focus-visible {
 
 .footer {
   width: fit-content;
-  margin: 0 auto clamp(6.25rem, 9%, 6.4375rem);
+  margin: 3.125rem auto clamp(6.25rem, 9%, 6.4375rem);
 }
 
 .footer__button .button__text {

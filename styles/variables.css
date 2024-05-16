@@ -19,7 +19,7 @@
   --text-shadow-color: rgba(var(--background-color-rgb), .5);
   --contour-color: var(--accent-color, #000);
   --sparks-color: #FF0000;
-
+  
   ::backdrop {
     --backdrop-color: rgba(0, 0, 0, .75);
   }
