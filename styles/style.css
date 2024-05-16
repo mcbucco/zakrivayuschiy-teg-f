@@ -16,7 +16,7 @@
 
 .page {
   color: var(--accent-color, #000);
-  font-family: var(--main-font, Inter-Variable), Inter, sans-serif; 
+  font-family: var(--main-font, Inter-Variable), Inter, sans-serif;
   background-image:var(--background-image);
   background-size: cover;
   background-attachment: fixed;
@@ -158,7 +158,7 @@ button:focus-visible {
   padding-inline-start: .5rem;
   padding-block-start: .25rem;
   padding-block-end: .4rem;
-  font-size: 1.125rem; 
+  font-size: 1.125rem;
   line-height: 1.21em;
   text-align: left;
   font-variation-settings: 'wght' var(--card-title-font-weight, 700);
@@ -414,6 +414,9 @@ button:focus-visible {
   padding: 1.875rem;
   color: var(--accent-color);
   background-color: var(--background-color);
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row-gap: 1.875rem;
 }
 
 .dialog:not([open]) {
@@ -423,12 +426,6 @@ button:focus-visible {
 
 .dialog::backdrop {
   background-color: var(--backdrop-color);
-}
-
-.dialog__form {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-row-gap: 1.875rem;
 }
 
 .dialog__message {
@@ -446,9 +443,14 @@ button:focus-visible {
 }
 
 .dialog__button {
-  padding: .78125rem 0 .78125rem;
   text-transform: uppercase;
   inline-size: 100%;
+}
+
+.dialog__button
+.button__text {
+  padding-block-start: .67rem;
+  padding-block-end: .67rem;
 }
 
 @media (max-width: 420px) {
